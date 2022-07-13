@@ -19,7 +19,7 @@
                 <a href="{$SERVER_URL}create_poll.php?type=autre" class="opacity" role="button">
                     <img alt="" class="img-responsive center-block" src="{'images/classic.png'|resource}"/>
                     <br/>
-                    <span class="btn btn-info btn-lg">
+                    <span class="btn btn-primary btn-lg">
                         <span class="glyphicon glyphicon-stats"></span>
                         {__('Homepage', 'Make a classic poll')}
                     </span>
@@ -29,7 +29,7 @@
         <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
             <p class="home-choice">
                 <a href="{$SERVER_URL}find_polls.php" class="opacity" role="button">
-                    <span class="btn btn-warning btn-lg">
+                    <span class="btn btn-skougkri btn-lg">
                         <span class="glyphicon glyphicon-search"></span>
                         {__('Homepage', 'Where are my polls')}
                     </span>

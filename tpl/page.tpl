@@ -14,11 +14,20 @@
     {if isset($favicon)}
         <link rel="icon" href="{$favicon|resource}">
     {/if}
-
+ 
     <link rel="stylesheet" href="{'css/bootstrap.min.css'|resource}">
     <link rel="stylesheet" href="{'css/datepicker3.css'|resource}">
+
+<!---
     <link rel="stylesheet" href="{'css/style.css'|resource}">
     <link rel="stylesheet" href="{'css/frama.css'|resource}">
+--->
+
+    
+<!---  //k/ 2 our two css to change ---->
+    <link rel="stylesheet" href="{'css/cust-style.css'|resource}">
+    <link rel="stylesheet" href="{'css/cust-frama.css'|resource}">
+    
     <link rel="stylesheet" href="{'css/print.css'|resource}" media="print">
     {if $provide_fork_awesome}
         <link rel="stylesheet" href="{'css/fork-awesome.min.css'|resource}">
@@ -38,9 +47,16 @@
 {if $use_nav_js}
     <script src="https://framasoft.org/nav/nav.js"></script>
 {/if}
-<div class="container ombre">
 
-{include file='header.tpl'}
+ <div id="pageall">
+
+
+   <div id="headerbre">
+    {include file='header.tpl'}
+ </div>
+
+<div class="container ombre  ombere-ombere">
+
 
 {block name=main}{/block}
 
@@ -49,5 +65,9 @@
 {if isset($tracking_code)}
     {$tracking_code}
 {/if}
+
+
+</div><!-- pageall -->
+
 </body>
 </html>

@@ -51,6 +51,7 @@ const DEFAULT_LANGUAGE = '{$defaultLanguage}';
 
 // List of supported languages, fake constant as arrays can be used as constants only in PHP >=5.6
 $ALLOWED_LANGUAGES = [
+    'el' => 'Ελληνικά',
     'fr' => 'Français',
     'en' => 'English',
     'oc' => 'Occitan',
@@ -63,7 +64,7 @@ $ALLOWED_LANGUAGES = [
 ];
 
 // Path to image file with the title
-const IMAGE_TITRE = 'images/logo-framadate.png';
+const IMAGE_TITRE = 'images/ellak_logo.png';
 
 // Clean URLs, boolean
 const URL_PROPRE = {if in_array($cleanUrl, array('1', 'on', 'true'))}true{else}false{/if};

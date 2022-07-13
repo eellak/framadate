@@ -52,11 +52,12 @@ if (is_file(CONF_FILENAME)) {
         $error = $e->getMessage();
     }
 } else {
-    define('NOMAPPLICATION', 'Framadate');
-    define('DEFAULT_LANGUAGE', 'fr');
-    define('IMAGE_TITRE', 'images/logo-framadate.png');
+    define('NOMAPPLICATION', 'Framadate ΕΛΛΑΚ');
+    define('DEFAULT_LANGUAGE', 'el');
+    define('IMAGE_TITRE', 'images/ellak_logo.png');
     define('LOG_FILE', 'admin/stdout.log');
     $ALLOWED_LANGUAGES = [
+        'el' => 'Ελληνικά',
         'fr' => 'Français',
         'en' => 'English',
         'es' => 'Español',

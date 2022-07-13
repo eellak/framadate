@@ -1,4 +1,4 @@
-    <header class="clearfix">
+    <header class="clearfix container">
     {if count($langs)>1}
         <form method="post" class="hidden-print">
             <div class="input-group input-group-sm pull-right col-xs-12 col-sm-2">
@@ -14,12 +14,12 @@
         </form>
     {/if}
 
-        <h1 class="row col-xs-12 col-sm-10">
+        <h1 class="row col-xs-12 col-sm-4">
             <a href="{$SERVER_URL|html}" title="{__('Generic', 'Home')} - {$APPLICATION_NAME|html}" >
                 <img src="{$TITLE_IMAGE|resource}" alt="{$APPLICATION_NAME|html}" class="img-responsive"/>
             </a>
         </h1>
-        {if !empty($title)}<h2 class="lead col-xs-12"><i>{$title|html}</i></h2>{/if}
-        <div class="trait col-xs-12" role="presentation"></div>
+        {if !empty($title)}<h2 class="lead col-xs-12 col-sm-6">{$title|html}</h2>{/if}
+<!-- --k-        <div class="trait col-xs-12" role="presentation"></div>   -->
     </header>
     <main>
